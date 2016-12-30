@@ -1,0 +1,143 @@
+.fancy-select {
+	position: relative;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.fancy-select.disabled {
+	opacity: 0.5;
+}
+
+.fancy-select .trigger {
+	cursor: pointer;
+	padding: 3px 30px 3px 8px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	color: #4B5468;
+	background: #fff;
+
+	transition: all 240ms ease-out;
+	-webkit-transition: all 240ms ease-out;
+	-moz-transition: all 240ms ease-out;
+	-ms-transition: all 240ms ease-out;
+	-o-transition: all 240ms ease-out;
+
+	&:first-letter {
+		text-transform: uppercase;
+	}
+
+	&:before {
+		content: "";
+		width: 22px;
+		height: 22px;
+		border: 1px solid #818181;
+		border-radius: 50%;
+		position: absolute;
+		right: 4px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.fancy-select .trigger:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-top: 10px solid #818181;
+	position: absolute;
+	top: 50%;
+	right: 9px;
+	transform: translateY(-50%);
+}
+
+.fancy-select .trigger.open {
+	background: #fff;
+}
+
+.fancy-select .trigger.open:after {
+	border-top: none;
+	border-bottom: 10px solid #818181;
+}
+
+.fancy-select .options {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 50;
+	max-height: 200px;
+	overflow: auto;
+	border: 1px solid $green;
+	background: #fff;
+
+	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+.fancy-select .options.open {
+	visibility: visible;
+	opacity: 1;
+
+	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+	transition: opacity 300ms ease-out, top 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+.fancy-select .options.overflowing {
+	top: auto;
+	bottom: 100%;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+.fancy-select .options li {
+	padding: 8px 12px;
+	color: #2B8686;
+	cursor: pointer;
+	white-space: nowrap;
+
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+
+	&:first-letter {
+		text-transform: uppercase;
+	}
+
+	&:hover {
+		color: $green;
+		font-weight: 400;
+	}
+}
+
+.fancy-select .options .selected {
+	font-weight: 400;
+	color: #fff;
+	background: lighten($green, 10%);
+
+	&:hover {
+		color: #fff;
+		// font-weight: 400;
+	}
+}

@@ -1,0 +1,86 @@
+// BUTTONS
+// ========
+%button-reset {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+// ---------------------------------------------
+//					 FORMS
+// =============================================
+.txt {
+	font: 16px/1.2 $rb-s;
+	font-weight: 300;
+	padding: 3px 7px;
+	border: none;
+	outline: none;
+	width: 100%;
+
+	&::placeholder {
+		color: #000;
+	}
+}
+
+.textarea {
+	@extend .txt;
+	height: 138px;
+	resize: none;
+}
+
+// ICONS, SPRITES
+// ===============
+%sprite {
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+}
+
+.search-form {
+	&__submit {
+		@include sprite($search);
+	}
+}
+
+.social__link {
+	&_twitter {
+		@include sprite($twitter);
+	}
+	&_fb {
+		@include sprite($fb);
+	}
+	&_flickr {
+		@include sprite($flickr);
+	}
+}
+
+.contacts__link {
+	&_phone:before {
+		@include sprite($phone);
+	}
+	&_email:before {
+		@include sprite($message);
+	}
+}
+
+.post-icons__link {
+	&_twitter {
+		@include sprite($twitter-dark);
+	}
+	&_fb {
+		@include sprite($fb-dark);
+	}
+	&_print {
+		@include sprite($print-dark);
+	}
+	&_email {
+		@include sprite($message-dark);
+	}
+}
+
+.form_icon {
+	&:after {
+		@include sprite($message-big);
+	}
+}

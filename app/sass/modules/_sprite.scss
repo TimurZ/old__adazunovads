@@ -1,0 +1,202 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$fb-dark-name: 'fb-dark';
+$fb-dark-x: 0px;
+$fb-dark-y: 82px;
+$fb-dark-offset-x: 0px;
+$fb-dark-offset-y: -82px;
+$fb-dark-width: 36px;
+$fb-dark-height: 36px;
+$fb-dark-total-width: 155px;
+$fb-dark-total-height: 118px;
+$fb-dark-image: 'sprite.png';
+$fb-dark: (0px, 82px, 0px, -82px, 36px, 36px, 155px, 118px, 'sprite.png', 'fb-dark', );
+$fb-name: 'fb';
+$fb-x: 82px;
+$fb-y: 0px;
+$fb-offset-x: -82px;
+$fb-offset-y: 0px;
+$fb-width: 38px;
+$fb-height: 39px;
+$fb-total-width: 155px;
+$fb-total-height: 118px;
+$fb-image: 'sprite.png';
+$fb: (82px, 0px, -82px, 0px, 38px, 39px, 155px, 118px, 'sprite.png', 'fb', );
+$flickr-name: 'flickr';
+$flickr-x: 41px;
+$flickr-y: 0px;
+$flickr-offset-x: -41px;
+$flickr-offset-y: 0px;
+$flickr-width: 38px;
+$flickr-height: 39px;
+$flickr-total-width: 155px;
+$flickr-total-height: 118px;
+$flickr-image: 'sprite.png';
+$flickr: (41px, 0px, -41px, 0px, 38px, 39px, 155px, 118px, 'sprite.png', 'flickr', );
+$location-name: 'location';
+$location-x: 0px;
+$location-y: 42px;
+$location-offset-x: 0px;
+$location-offset-y: -42px;
+$location-width: 38px;
+$location-height: 37px;
+$location-total-width: 155px;
+$location-total-height: 118px;
+$location-image: 'sprite.png';
+$location: (0px, 42px, 0px, -42px, 38px, 37px, 155px, 118px, 'sprite.png', 'location', );
+$message-big-name: 'message-big';
+$message-big-x: 123px;
+$message-big-y: 0px;
+$message-big-offset-x: -123px;
+$message-big-offset-y: 0px;
+$message-big-width: 32px;
+$message-big-height: 22px;
+$message-big-total-width: 155px;
+$message-big-total-height: 118px;
+$message-big-image: 'sprite.png';
+$message-big: (123px, 0px, -123px, 0px, 32px, 22px, 155px, 118px, 'sprite.png', 'message-big', );
+$message-dark-name: 'message-dark';
+$message-dark-x: 80px;
+$message-dark-y: 42px;
+$message-dark-offset-x: -80px;
+$message-dark-offset-y: -42px;
+$message-dark-width: 36px;
+$message-dark-height: 36px;
+$message-dark-total-width: 155px;
+$message-dark-total-height: 118px;
+$message-dark-image: 'sprite.png';
+$message-dark: (80px, 42px, -80px, -42px, 36px, 36px, 155px, 118px, 'sprite.png', 'message-dark', );
+$message-name: 'message';
+$message-x: 123px;
+$message-y: 25px;
+$message-offset-x: -123px;
+$message-offset-y: -25px;
+$message-width: 13px;
+$message-height: 10px;
+$message-total-width: 155px;
+$message-total-height: 118px;
+$message-image: 'sprite.png';
+$message: (123px, 25px, -123px, -25px, 13px, 10px, 155px, 118px, 'sprite.png', 'message', );
+$phone-name: 'phone';
+$phone-x: 139px;
+$phone-y: 25px;
+$phone-offset-x: -139px;
+$phone-offset-y: -25px;
+$phone-width: 5px;
+$phone-height: 10px;
+$phone-total-width: 155px;
+$phone-total-height: 118px;
+$phone-image: 'sprite.png';
+$phone: (139px, 25px, -139px, -25px, 5px, 10px, 155px, 118px, 'sprite.png', 'phone', );
+$print-dark-name: 'print-dark';
+$print-dark-x: 39px;
+$print-dark-y: 82px;
+$print-dark-offset-x: -39px;
+$print-dark-offset-y: -82px;
+$print-dark-width: 36px;
+$print-dark-height: 36px;
+$print-dark-total-width: 155px;
+$print-dark-total-height: 118px;
+$print-dark-image: 'sprite.png';
+$print-dark: (39px, 82px, -39px, -82px, 36px, 36px, 155px, 118px, 'sprite.png', 'print-dark', );
+$search-name: 'search';
+$search-x: 78px;
+$search-y: 82px;
+$search-offset-x: -78px;
+$search-offset-y: -82px;
+$search-width: 24px;
+$search-height: 32px;
+$search-total-width: 155px;
+$search-total-height: 118px;
+$search-image: 'sprite.png';
+$search: (78px, 82px, -78px, -82px, 24px, 32px, 155px, 118px, 'sprite.png', 'search', );
+$twitter-dark-name: 'twitter-dark';
+$twitter-dark-x: 41px;
+$twitter-dark-y: 42px;
+$twitter-dark-offset-x: -41px;
+$twitter-dark-offset-y: -42px;
+$twitter-dark-width: 36px;
+$twitter-dark-height: 36px;
+$twitter-dark-total-width: 155px;
+$twitter-dark-total-height: 118px;
+$twitter-dark-image: 'sprite.png';
+$twitter-dark: (41px, 42px, -41px, -42px, 36px, 36px, 155px, 118px, 'sprite.png', 'twitter-dark', );
+$twitter-name: 'twitter';
+$twitter-x: 0px;
+$twitter-y: 0px;
+$twitter-offset-x: 0px;
+$twitter-offset-y: 0px;
+$twitter-width: 38px;
+$twitter-height: 39px;
+$twitter-total-width: 155px;
+$twitter-total-height: 118px;
+$twitter-image: 'sprite.png';
+$twitter: (0px, 0px, 0px, 0px, 38px, 39px, 155px, 118px, 'sprite.png', 'twitter', );
+$spritesheet-width: 155px;
+$spritesheet-height: 118px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($fb-dark, $fb, $flickr, $location, $message-big, $message-dark, $message, $phone, $print-dark, $search, $twitter-dark, $twitter, );
+$spritesheet: (155px, 118px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
